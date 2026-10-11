@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>OAuth クロスサイトPOST検証</title>
+</head>
+<body>
+  <h1>架空フォームPOST検証</h1>
+  <p>実際のGoogle認証は行いません。固定の架空データだけを送信します。</p>
+  <form method="POST" action="https://google-oauth-minimal-test-kz.kz-yosino.chatgpt.site/api/google/oauth-return">
+    <input type="hidden" name="code" value="diagnostic-only-code-v1">
+    <input type="hidden" name="state" value="diagnostic-only-state-v1">
+    <button type="submit">架空データをPOSTする</button>
+  </form>
+</body>
+</html>
